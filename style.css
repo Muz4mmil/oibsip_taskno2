@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    -webkit-scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.page1{
+    background-image: linear-gradient(rgba(255,255,255,0.20),rgba(255,255,255,0.20)) ,url("/images/page1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.page1{
+    display: flex;
+}
+
+.page1 div{
+    font-weight: 1000;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+h1{  
+    font-size: 55px; 
+    font-weight: 1000;
+    opacity: .75;
+    line-height: 50px;
+}
+.page1 p{
+    font-size: 70px;
+    margin-top: 30px;
+    line-height: 60px;
+}
+.page1 span{
+    margin-left: 10px;
+    font-weight: 600;
+    opacity: .75;
+}
+
+.page2{
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)) ,url(images/page2.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.abcontainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.abimage{
+    height: 400px;
+    min-width: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.abimage img{
+    height: 100%;
+    width: 100%;
+}
+
+.about{
+    /* width: max-content; */
+    padding-left: 50px;
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.about h1,.brabout h1{
+    font-size: 30px;
+}
+
+
+.page3{
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)) ,url(images/page3.jpg);
+    background-size: cover;
+    background-position: right;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brian-img{
+    /* position: absolute; */
+    background-image: url(images/brian.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-width: 325px;
+}
+
+.brabout{
+    color: white;
+    width: 700px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+.page4{
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,1)) ,url(images/page4.jpg);
+    background-size: cover;
+    background-position: left;
+    align-items: center;
+}
+
+.page4 h1{
+    position: absolute;
+    right: 10%;
+    width: 300px;
+    color: white;
+    font-size: 65px;
+    line-height: 65px;
+    font-style: italic;
+}
+
+.quote{
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 40px;
+    width: 300px;
+    color: white;
+    font-style: italic;
+    opacity: .7;
+}
+.quote::after{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    content: '- Paul Walker';
+    font-size: 16px;
+    height: 25px;
+    width: max-content;
+    opacity: .5;
+}
+
+.credit{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    bottom: 10px;
+    right: 10px;
+    font-style: italic;
+    opacity: .5;
+}
+
+.credit a{
+    color: white;
+}
