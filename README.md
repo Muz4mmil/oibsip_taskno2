@@ -1,7 +1,6 @@
 # oibsip_taskno2
 Task Submission for internship at Oasis Infobyte
 
-Task : Simple Calculator using HTML, CSS, and JavaScript 
-
+Task : Tribute Page using HTML and CSS 
 Preview link: 
-https://calculator-projects-muz4mmil.netlify.app
+https://paul-projects-muz4mmil.netlify.app
